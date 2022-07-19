@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/ll2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_vertical|top"
+    android:orientation="vertical"
+    android:scrollbarStyle="insideOverlay"
+    android:scrollbars="vertical" >
+
+    <TextView
+        android:id="@+id/tvheader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|top"
+        android:text="@string/text_event"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="0.23" >
+
+            <LinearLayout
+		        android:id="@id/ll1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:addStatesFromChildren="false"
+        android:baselineAligned="true"
+        android:gravity="fill_horizontal|fill_vertical"
+        android:minHeight="20dp"
+        android:padding="5dp"
+        android:visibility="visible" >
+
+        <Button
+            android:id="@+id/scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:text="@string/menu1" />
+
+        <Button
+            android:id="@+id/cplist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:text="@string/menu3" />
+
+        <Button
+            android:id="@+id/refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:text="@string/menu2" />
+
+        <Button
+            android:id="@+id/buttonexit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:text="@string/menuexit" />
+
+    </LinearLayout>
+
+</LinearLayout>
