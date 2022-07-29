@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/coding/android/HTVKChallenge/app/src/main/res/layout/activity_checkpoint_list.xml" value="0.246875" />
+        <entry key="..\:/coding/android/HTVKChallenge/app/src/main/res/layout/activity_main.xml" value="0.2122905027932961" />
+        <entry key="..\:/coding/android/HTVKChallenge/app/src/main/res/layout/login.xml" value="0.25" />
+        <entry key="..\:/coding/android/HTVKChallenge/app/src/main/res/layout/main.xml" value="1.0" />
+        <entry key="..\:/coding/android/HTVKChallenge/app/src/main/res/layout/menu.xml" value="0.33" />
+        <entry key="..\:/coding/android/HTVKChallenge/app/src/main/res/layout/szekcioeloadaslista.xml" value="0.1884498480243161" />
+        <entry key="..\:/coding/android/HTVKChallenge/app/src/main/res/layout/test.xml" value="0.3875" />
+        <entry key="..\:/coding/android/HTVKChallenge/app/src/main/res/menu/main.xml" value="0.20625" />
+      </map>
+    </option>
+  </component>
   <component name="NullableNotNullManager">
     <option name="myDefaultNullable" value="android.support.annotation.Nullable" />
     <option name="myDefaultNotNull" value="android.support.annotation.NonNull" />

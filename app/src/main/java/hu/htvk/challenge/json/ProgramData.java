@@ -1,33 +1,30 @@
 package hu.htvk.challenge.json;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Date;
-import java.text.SimpleDateFormat;
-import java.text.ParseException;
+import android.os.Parcel;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import android.os.Parcel;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 
 public class ProgramData implements DataObjectIf {
 
-	private List<Checkpoint> checkpoints = new ArrayList<Checkpoint>();
+	private List<Checkpoint> checkpoints = new ArrayList<>();
 
 	private String title;
 	private Date startDate;
-
-	public ProgramData() {
-	}
 	
     protected ProgramData(Parcel in) {
         title = in.readString();
         startDate = new Date(in.readLong());
 
         if (in.readByte() == 0x01) {
-            checkpoints = new ArrayList<Checkpoint>();
+            checkpoints = new ArrayList<>();
             in.readList(checkpoints, Checkpoint.class.getClassLoader());
         } else {
             checkpoints = null;

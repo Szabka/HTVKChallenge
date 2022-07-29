@@ -2,13 +2,15 @@ package hu.htvk.challenge.json;
 
 import android.os.Parcel;
 
+import com.google.android.gms.maps.model.LatLng;
+
 public class Checkpoint implements DataObjectIf {
 
-	private Integer id;
-	private String name;
-	private int priority;
-	private int type;
-	private String location;
+	private Integer id = 0;
+	private String name = "";
+	private int priority = 0;
+	private int type = 0;
+	private String location = "";
 	
 	public Checkpoint() {
 	}
@@ -50,6 +52,11 @@ public class Checkpoint implements DataObjectIf {
 	}
 	public void setType(int type) {
 		this.type = type;
+	}
+
+	public LatLng getPositionAsLatLong(){
+		String[] parsedLocation = this.location.split(",");
+		return new LatLng(Double.parseDouble(parsedLocation[0].trim()), Double.parseDouble(parsedLocation[1].trim()));
 	}
 
 	@Override

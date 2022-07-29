@@ -4,47 +4,26 @@
     <string name="server">https://challenge.htvk.hu/checkpoint/app</string>
 
     <string name="app_name">HTVKChallenge</string>
-    <string name="action_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
     <string name="text_username">Felhasználónév</string>
     <string name="text_password">Regisztrációs kód</string>
     <string name="text_event">CHALLENGE</string>
     <string name="text_login">Belépés</string>
-    <string name="text_scanning">Beolvasás</string>
-    <string name="text_scanned"> beolvasva</string>
-    <string name="text_valid">Beléphet</string>
-    <string name="text_invalid">Nem léphet be</string>
-    <string name="text_exit">Kilépés</string>
-    <string name="text_yes">Igen</string>
-    <string name="text_no">Nem</string>
-    <string name="text_vaku">Vaku</string>
-    <string name="text_confirm">Valóban be akarja fejezni a beolvasást?</string>
     <string name="autherror">Sikertelen azonosítás</string>
     <string name="rendezvenyletolteserror">Nem sikerült a rendezvénylista letöltése</string>
-    <string name="menu1">Új kikötő</string>
-    <string name="menu2">Frissítés</string>
-    <string name="menu3">Kikötőlista</string>
-
-    <string name="menuexit">Kilépés</string>
-    <string name="menuTitle">Elérhető opciók</string>
-
-    <string name="successfulldelete">Sikeres törlés</string>
     <string name="downloaderror">Sikertelen letöltés</string>
+    <string name="downloadSuccess">Sikeres újratöltés</string>
+    <string name="permissionerror">Helyadatokhoz való hozzáférés szükséges!</string>
     <string name="upload_error">Sikertelen feltöltés</string>
+    <string name="upload_success">Sikeres bejelentés</string>
     <string name="jsonerror">Adatformátum hiba</string>
-
-    <string name="versionstring">2022T1</string>
-
-    <string-array name="eventarray">
-        <!--
-        <item>event1</item>
-         -->
-    </string-array>
     <string name="text_email">E-mail cím</string>
-    <string name="title_activity_checkpoint_list">CheckpointListActivity</string>
-    <string name="large_text">
-        "Material is the metaphor.\n\n"
-    </string>
+    <string name="destName">Célpont</string>
+    <string name="destDistance">Távolság</string>
+    <string name="destBearing">Irány</string>
+    <string name="tavolsag">Távolság: </string>
+    <string name="irany">Irány: </string>
+    <string name="bejelentes">Bejelentés</string>
+    <string name="ujratoltes">Újratöltés</string>
 
 
 </resources>
