@@ -14,8 +14,6 @@ import android.content.Context;
 import android.util.Log;
 
 public class HttpConnector {
-
-    private static final String BACKENDURL="";
 	private static final String TAG = "HttpConnector";
 
 	private static OkHttpClient client;
@@ -28,15 +26,10 @@ public class HttpConnector {
 	}
 
 	public static String execute(Context context, RequestBody requestBody) throws IOException {
-		return executePost(context, requestBody, 3600000);
+		return executePost(context, requestBody);
 	}
 
-	public static String execute(Context context, URI uri) throws IOException {
-        RequestBody entity = null;
-		return executePost(context, entity, 3600000);
-	}
-
-	private static String executePost(Context context, RequestBody requestBody, int soTimeOut)
+	private static String executePost(Context context, RequestBody requestBody)
 			throws IOException {
 		String retVal = null;
         String uri = context.getResources().getString(R.string.server);
